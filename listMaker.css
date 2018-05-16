@@ -1,0 +1,42 @@
+body{
+    font-family: 'Times New Roman';
+    color: #0a0742;
+    background-color: #5DBCD2;
+    display: center;
+}
+
+input{
+    border: 2px solid white;
+    background-color: #0a0742;
+    color: white;
+}
+
+::placeholder { 
+    color: #5DBCD2;
+    opacity: 1 ;
+}
+
+button{
+    background-color: #0a0742;
+
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+
+    border: 2px solid white;
+    color: #5DBCD2;
+    padding: 10px 24px;
+    text-decoration: #5DBCD2;
+    font-size: 16px;
+    border-radius: 50%;
+}
+
+button:hover {
+    background-color: white;
+    color: #5DBCD2;
+    border: 2px solid #0a0742;
+}
+
+dl li{
+    list-style: none;
+    margin-top: 2rem;
+}

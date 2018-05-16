@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="listMaker.css" />
+</head>
+<body>
+    <h1 class="header">Netflix Recommendations</h1>
+
+
+    <form id="newRec">
+        <p>
+            <!--label for="title">Title</label-->
+            <input type="text" name="title" autofocus placeholder="Title">
+        </p>
+        <p>
+            <!--label for="genre">Genre</label-->
+            <input list="classify" name='genre' placeholder="Genre">
+            <datalist id="classify">
+                <option value="Unknown">
+                <option value="Movie">
+                <option value="Documentary">
+                <option value="TV Show">
+            </datalist>
+        </p>
+
+        <button type="submit">Add</button>
+    </form>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openList('Unknown')">Unknown</button>
+        <button class="tablinks" onclick="openList('Movie')">Movie</button>
+        <button class="tablinks" onclick="openList('Documentary')">Documentary</button>
+        <button class="tablinks" onclick="openList('TV Show')">TV Show</button>
+    </div>
+
+
+    <div id="Unknown" class="tabcontent">
+        <h1>Unknown</h1>
+
+    </div>
+
+    <div id="Movie" class="tabcontent" style="display:none">
+        <h1>Movie</h1>
+        
+    </div>
+
+    <div id="Documentary" class="tabcontent" style="display:none">
+        <h1>Documentary</h1>
+        
+    </div>
+
+    <div id="TV Show" class="tabcontent" style="display:none">
+        <h1>TV Show</h1>
+        
+    </div>
+
+    <div id="all">
+        <h3>All the Recommendations</h3>
+    
+    </div>
+
+
+
+    <script src="listmaker.js"></script>
+</body>
+</html>
