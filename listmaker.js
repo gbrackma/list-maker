@@ -14,7 +14,7 @@ form.addEventListener('submit', function(ev){
     }
 
     allTheRec.appendChild(renderlist(newItem))
-    array.push(renderlist(newItem))
+    array.push(newItem)
 
     form.reset()
     form.title.focus()
@@ -46,12 +46,14 @@ function renderlist(movie){
       const thing = ev.target
       //remove from array
 
-      debugger
+      let i
+      for(i =0; i < array.length; i++){
+          if( `Title${array[i].Title}Genre${array[i].Genre}Delete` == thing.parentNode.textContent){
+            array.splice(i, 1);
+            break
+          }
+      }
       //removeFromArray(thing)
-    let index = array.indexOf(thing.parentNode);
-    if (index > -1) {
-        array.splice(index, 1);
-    }   
 
     thing.parentNode.remove()
   }
