@@ -22,12 +22,21 @@ button{
     -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;
 
-    border: 2px solid white;
+    border: none;
     color: #5DBCD2;
     padding: 10px 24px;
     text-decoration: #5DBCD2;
     font-size: 16px;
-    border-radius: 50%;
+}
+
+.w3-bar{
+    background-color: #0a0742;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+
+    border: 2px solid white;
+    color: #5DBCD2;
+    text-decoration: #5DBCD2;
 }
 
 button:hover {
