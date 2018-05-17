@@ -108,8 +108,6 @@ function openList(type) {
         x[i].style.display = "none"
     }
     document.getElementById(type).style.display = "block"
-
-
 }
 
 function addToGenreList(item){

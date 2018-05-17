@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Netflix Recommendations</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="listMaker.css" />
 </head>
@@ -11,7 +11,7 @@
     <h1 class="header">Netflix Recommendations</h1>
 
 
-    <form id="newRec">
+    <form id="newRec" class='newRec'>
         <p>
             <!--label for="title">Title</label-->
             <input type="text" name="title" autofocus placeholder="Title">
@@ -23,18 +23,21 @@
                 <option value="Unknown">
                 <option value="Movie">
                 <option value="Documentary">
-                <option value="TV Show">
+                <option value="TV">
             </datalist>
         </p>
 
         <button type="submit">Add</button>
     </form>
 
+    <br>
+    <br>
+
     <div class="w3-bar">
         <button class="w3-bar-item w3-button" onclick="openList('Unknown')">Unknown</button>
         <button class="w3-bar-item w3-button" onclick="openList('Movie')">Movie</button>
         <button class="w3-bar-item w3-button" onclick="openList('Documentary')">Documentary</button>
-        <button class="w3-bar-item w3-button" onclick="openList('TV Show')">TV Show</button>
+        <button class="w3-bar-item w3-button" onclick="openList('TV')">TV</button>
     </div>
 
 
@@ -53,12 +56,12 @@
         
     </div>
 
-    <div id="TV Show" class="tabcontent" style="display:none">
-        <h1>TV Show</h1>
+    <div id="TV" class="tabcontent" style="display:none">
+        <h1>TV</h1>
         
     </div>
 
-    <div id="all">
+    <div id="all" style="display:none">
         <h3>All the Recommendations</h3>
     
     </div>

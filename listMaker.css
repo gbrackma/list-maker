@@ -1,48 +1,66 @@
 body{
     font-family: 'Times New Roman';
-    color: #0a0742;
-    background-color: #5DBCD2;
+    color: rgb(185, 10, 10);
+    background-color: black;
     display: center;
 }
 
-input{
-    border: 2px solid white;
-    background-color: #0a0742;
-    color: white;
+input[type=text]{
+    background-color: white;
+
+    /*border: 4px solid rgb(185, 10, 10);*/
+    border: none;
+    color: black;
+    padding: 10px 24px;
+    text-decoration: black;
+    border: 4px solid white;
+
+}
+
+input[list="classify"]{
+    background-color: white;
+
+    /*border: 4px solid rgb(185, 10, 10);*/
+    border: none;
+    color: black;
+    padding: 10px 24px;
+    text-decoration: black;
+    border: 4px solid white;
+ 
+}
+
+.newRec{
+    background-color: white;
+    color: rgb(185, 10, 10);
+    display: inline-flex;
+    font-size: 10px;
+    width: auto;
+    height: auto;
 }
 
 ::placeholder { 
-    color: #5DBCD2;
+    color: black;
     opacity: 1 ;
-}
-
-button{
-    background-color: #0a0742;
-
-    -webkit-transition-duration: 0.4s; 
-    transition-duration: 0.4s;
-
-    border: none;
-    color: #5DBCD2;
-    padding: 10px 24px;
-    text-decoration: #5DBCD2;
     font-size: 16px;
 }
 
-.w3-bar{
-    background-color: #0a0742;
+button{
+    background-color: rgb(185, 10, 10);
+
     -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;
 
-    border: 2px solid white;
-    color: #5DBCD2;
-    text-decoration: #5DBCD2;
+    border: 4px solid white;
+    color: black;
+    padding: 10px 24px;
+    text-decoration: black;
+    font-size: 16px;
 }
 
 button:hover {
     background-color: white;
-    color: #5DBCD2;
-    border: 2px solid #0a0742;
+    color: black;
+    border: 5px solid rgb(185, 10, 10);
 }
 
 ul {
@@ -77,4 +95,36 @@ dd {
         padding: 0;
         text-align: center;
         list-style: none;
+    }
+
+    .w3-bar {
+        overflow: hidden;
+        border: 3px solid  rgb(185, 10, 10);
+        background-color: white;
+
+    }
+    
+    /* Style the buttons that are used to open the tab content */
+    .w3-bar button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+    }
+    
+    /* Change background color of buttons on hover */
+    .w3-bar button:hover {
+        background-color:  rgb(185, 10, 10);
+    }
+    
+    
+    /* Style the tab content */
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: none;
+        border-top: none;
     }
