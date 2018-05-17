@@ -1,5 +1,5 @@
 body{
-    font-family: 'Times New Roman';
+    font-family: 'Kanit', sans-serif;
     color: rgb(185, 10, 10);
     background-color: black;
     display: center;
@@ -29,6 +29,19 @@ input[list="classify"]{
  
 }
 
+button[type='submit']{
+    background-color: rgb(185, 10, 10);
+
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+
+    border: 4px solid white;
+    color: black;
+    padding: 10px 24px;
+    text-decoration: black;
+    font-size: 16px;
+}
+
 .newRec{
     background-color: white;
     color: rgb(185, 10, 10);
@@ -45,12 +58,12 @@ input[list="classify"]{
 }
 
 button{
-    background-color: rgb(185, 10, 10);
+    background-color: white;
 
     -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;
 
-    border: 4px solid white;
+    border: 4px solid rgb(185, 10, 10);
     color: black;
     padding: 10px 24px;
     text-decoration: black;
