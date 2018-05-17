@@ -4,6 +4,10 @@ body{
     background-color: black;
     display: center;
 }
+h1{
+    font-size: 48px;
+    align-self: center;
+}
 
 input[type=text]{
     background-color: white;
@@ -114,6 +118,7 @@ dd {
         overflow: hidden;
         border: 3px solid  rgb(185, 10, 10);
         background-color: white;
+        font-size: 16px;
 
     }
     
